@@ -30,6 +30,16 @@ namespace Fasetto_Word
         /// RGB value (in hex) for the background color of the profile picture
         /// </summary>
         public string ProfilePictureRGB { get; set; }
+
+        /// <summary>
+        /// True if there are unread messages in this chat
+        /// </summary>
+        public bool NewContentAvailable { get; set; }
+
+        /// <summary>
+        /// True if this item is currently selected
+        /// </summary>
+        public bool IsSelected { get; set; }
     }
 
 }
