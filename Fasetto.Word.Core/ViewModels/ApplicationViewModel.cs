@@ -15,5 +15,10 @@ namespace Fasetto.Word.Core.ViewModels
         /// The current page of the application
         /// </summary>
         public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+
+        /// <summary>
+        /// True if SideMenu is visible
+        /// </summary>
+        public bool SideMenuVisible { get; set; } = false;
     }
 }

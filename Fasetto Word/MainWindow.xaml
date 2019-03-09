@@ -21,7 +21,7 @@
                     <ControlTemplate TargetType="{x:Type Window}">
                         
                         <!-- Outer border with the dropshadow margin -->
-                        <Border Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
+                        <Border Margin="{Binding OuterMarginSizeThickness, FallbackValue=10}">
                             
                             <!-- Main window outline -->
                             <Grid>
@@ -105,17 +105,8 @@
                                     </Grid>
 
                                     <!-- Page Content -->
-                                    <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" Background="Blue">
-                                        <Border>
-                                            <Border.Background>
-                                                <ImageBrush 
-                                                    TileMode="Tile" 
-                                                    ViewportUnits="Absolute" 
-                                                    Viewport="0 0 500 500" 
-                                                    ImageSource="/Images/Backgrounds/emoji-background.png"/>
-                                            </Border.Background>
-                                            <ContentPresenter Content="{TemplateBinding Content}"/>
-                                        </Border>
+                                    <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" ClipToBounds="True" >
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
                                     </Border>
                                     
                                 </Grid>
@@ -143,7 +134,7 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="275"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
@@ -157,7 +148,8 @@
                                                                         Converter={local:ApplicationPageValueConverter}}" 
                    Background="Transparent" />
 
-            <local:SideMenuControl>
+            <local:SideMenuControl Width="300" local:AnimateSlideInFromLeftProperty.Value="{Binding ApplicationViewModel.SideMenuVisible, 
+                                                                        Source={x:Static local:ViewModelLocator.Instance}}">
                 <local:ChatListControl/>
             </local:SideMenuControl>
                             

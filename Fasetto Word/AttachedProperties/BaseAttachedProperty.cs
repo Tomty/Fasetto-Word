@@ -22,6 +22,12 @@ namespace Fasetto_Word
         /// </summary>
         public event Action<DependencyObject, DependencyPropertyChangedEventArgs> ValueChanged = (sender, e) => { };
 
+
+        /// <summary>
+        /// Fire when the value changed, even when the value is the same
+        /// </summary>
+        public event Action<DependencyObject, object> ValueUpdated = (sender, value) => { };
+
         #endregion
 
         #region public properties
@@ -39,7 +45,31 @@ namespace Fasetto_Word
         /// The attached property for this class
         /// </summary>
         public static readonly DependencyProperty ValueProperty =
-            DependencyProperty.RegisterAttached("Value", typeof(Property), typeof(BaseAttachedProperty<Parent, Property>), new PropertyMetadata(new PropertyChangedCallback(OnValuePropertyChanged)));
+            DependencyProperty.RegisterAttached(
+                "Value", 
+                typeof(Property), 
+                typeof(BaseAttachedProperty<Parent, Property>), 
+                new UIPropertyMetadata(
+                    default(Property),
+                    new PropertyChangedCallback(OnValuePropertyChanged),
+                    new CoerceValueCallback(OnValuePropertyUpdated)
+                    ));
+
+
+        /// <summary>
+        /// The callback event when the <see cref="ValueProperty"/> is changed, even if it is the same value
+        /// </summary>
+        /// <param name="d">The UI elemen that had it's property changed</param>
+        /// <param name="e">the argument for the event</param>
+        private static object OnValuePropertyUpdated(DependencyObject d, object value)
+        {
+            //Call the parent function
+            Instance.OnValueUpdated(d, value);
+            //Call event listener
+            Instance.ValueUpdated(d, value);
+
+            return value;
+        }
 
         /// <summary>
         /// The callback event when the <see cref="ValueProperty"/> is changed
@@ -78,6 +108,14 @@ namespace Fasetto_Word
         /// <param name="d">The UI elemen that this property was changed for</param>
         /// <param name="e">the argument for this event</param>
         public virtual void OnValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) { }
+
+
+        /// <summary>
+        /// The methods that is called when an yattached property of this type is changed, even if the value is the same
+        /// </summary>
+        /// <param name="d">The UI elemen that this property was changed for</param>
+        /// <param name="e">the argument for this event</param>
+        public virtual void OnValueUpdated(DependencyObject d, object value) { }
 
         #endregion
     }
