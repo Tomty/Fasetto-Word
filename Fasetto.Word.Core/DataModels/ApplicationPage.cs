@@ -17,5 +17,10 @@ namespace Fasetto.Word.Core
         /// The main chat page
         /// </summary>
         Chat = 1,
+
+        /// <summary>
+        /// The Register page
+        /// </summary>
+        Register = 2,
     }
 }

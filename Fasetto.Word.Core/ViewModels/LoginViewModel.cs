@@ -1,8 +1,8 @@
-﻿using System;
-using System.Security;
+﻿using System.Security;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Input;
+using Fasetto.Word.Core;
+using Fasetto.Word.Core.ViewModels;
 
 namespace Fasetto.Word.Core
 {
@@ -42,6 +42,12 @@ namespace Fasetto.Word.Core
         /// </summary>
         public ICommand LoginCommand { get; set; }
 
+
+        /// <summary>
+        /// The command to register for a new account
+        /// </summary>
+        public ICommand RegisterCommand { get; set; }
+
         #endregion
 
         #region constructor
@@ -51,7 +57,9 @@ namespace Fasetto.Word.Core
         /// </summary>
         public LoginViewModel()
         {
-            LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));   
+            LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
+            RegisterCommand = new RelayCommand(async () => await Register());
+
         }
 
         #endregion
@@ -63,16 +71,29 @@ namespace Fasetto.Word.Core
         /// <returns></returns>
         public async Task Login(object parameter)
         {
-            await RunCommand(() => this.LoginIsRunning, async () =>
+            await RunCommand(() => LoginIsRunning, async () =>
             {
                 await Task.Delay(5000);
 
-                var email = this.Email;
+                var email = Email;
 
                 // TEMPORARY  bad idea to store password in variable
                 var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
 
             });
+        }
+
+        /// <summary>
+        /// Take the user to the register page
+        /// </summary>
+        /// <returns></returns>
+        public async Task Register()
+        {
+            
+            // Go to register page
+            IoC.IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register;
+
+            await Task.Delay(1);
         }
     }
 }

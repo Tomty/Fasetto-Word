@@ -67,6 +67,7 @@
                     <!-- Create account button -->
                     <Button
                         Content="Create a free account"
+                        Command="{Binding RegisterCommand}"
                         Style="{StaticResource TextButton}"  
                         HorizontalAlignment="center"/>
 
