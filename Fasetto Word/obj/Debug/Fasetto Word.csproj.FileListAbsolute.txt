@@ -93,3 +93,5 @@ C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csp
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csproj.CopyComplete
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.exe
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.pdb
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto.Word.Core.dll
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto.Word.Core.pdb

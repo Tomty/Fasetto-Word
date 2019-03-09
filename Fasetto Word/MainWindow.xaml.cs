@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fasetto.Word.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace Fasetto_Word
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ApplicationViewModel ApplicationViewModel => new ApplicationViewModel();
+
         public MainWindow()
         {
             InitializeComponent();

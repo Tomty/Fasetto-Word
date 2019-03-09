@@ -152,7 +152,7 @@
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
             </Grid.Background>
 
-            <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" Background="Transparent" />
+            <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding ApplicationViewModel.CurrentPage, ElementName=AppWindow,Converter={local:ApplicationPageValueConverter}}" Background="Transparent" />
 
             <local:SideMenuControl>
                 <local:ChatListControl/>

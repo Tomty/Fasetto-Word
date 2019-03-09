@@ -1,0 +1,12 @@
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.dll
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CoreCompileInputs.cache
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CopyComplete
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.dll
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.pdb
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.pdb
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.dll
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.xml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csprojAssemblyReference.cache

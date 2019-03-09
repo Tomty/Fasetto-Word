@@ -97,8 +97,6 @@
     <Compile Include="Controls\SideMenuControl.xaml.cs">
       <DependentUpon>SideMenuControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\ApplicationPage.cs" />
-    <Compile Include="Expressions\ExpressionHelpers.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\ChatPage.xaml.cs">
       <DependentUpon>ChatPage.xaml</DependentUpon>
@@ -106,21 +104,11 @@
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Security\SecureStringHelpers.cs" />
     <Compile Include="ValueConverters\ApplicationPageValueConverter.cs" />
     <Compile Include="ValueConverters\BasevalueConverter.cs" />
     <Compile Include="ValueConverters\BooleanToVisibilityConverter.cs" />
     <Compile Include="ValueConverters\StringRGBToBrushConverter.cs" />
-    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
-    <Compile Include="ViewModel\Base\IHavePassword.cs" />
-    <Compile Include="ViewModel\Base\RelayParameterizedCommand.cs" />
-    <Compile Include="ViewModel\Base\RelayCommand.cs" />
-    <Compile Include="ViewModel\Chat\ChatListViewModel.cs" />
-    <Compile Include="ViewModel\Chat\ChatListItemViewModel.cs" />
-    <Compile Include="ViewModel\Chat\Design\ChatListDesignModel.cs" />
-    <Compile Include="ViewModel\Chat\Design\ChatListItemDesignModel.cs" />
-    <Compile Include="ViewModel\LoginViewModel.cs" />
-    <Compile Include="ViewModel\WindowViewModel.cs" />
+    <Compile Include="ViewModels\WindowViewModel.cs" />
     <Compile Include="Window\WindowResizer.cs" />
     <Page Include="Controls\Chat\ChatListControl.xaml">
       <SubType>Designer</SubType>
@@ -246,6 +234,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Backgrounds\emoji-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fasetto.Word.Core\Fasetto.Word.Core.csproj">
+      <Project>{cf6d66a9-2d68-4a3e-b9e7-88f82c0ba66d}</Project>
+      <Name>Fasetto.Word.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" />
