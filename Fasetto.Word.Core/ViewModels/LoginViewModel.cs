@@ -59,7 +59,6 @@ namespace Fasetto.Word.Core
         {
             LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
             RegisterCommand = new RelayCommand(async () => await Register());
-
         }
 
         #endregion
@@ -73,12 +72,16 @@ namespace Fasetto.Word.Core
         {
             await RunCommand(() => LoginIsRunning, async () =>
             {
-                await Task.Delay(5000);
+                await Task.Delay(1000);
 
-                var email = Email;
+                // Go to chat Page
+                IoC.IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat);
+
+
+                //var email = Email;
 
                 // TEMPORARY  bad idea to store password in variable
-                var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
+                //var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
 
             });
         }
@@ -90,12 +93,12 @@ namespace Fasetto.Word.Core
         public async Task Register()
         {
 
-            IoC.IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
+           // IoC.IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
 
-            return;
+            //return;
 
             // Go to register page
-            IoC.IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register;
+            IoC.IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
 
             await Task.Delay(1);
         }

@@ -99,3 +99,5 @@ C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\bin\Debug\Ninject.dll
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\bin\Debug\Ninject.xml
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPage.g.cs
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPage.baml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.g.cs
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.baml

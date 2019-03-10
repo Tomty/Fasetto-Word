@@ -20,5 +20,18 @@ namespace Fasetto.Word.Core.ViewModels
         /// True if SideMenu is visible
         /// </summary>
         public bool SideMenuVisible { get; set; } = false;
+
+        /// <summary>
+        /// Navigate to the specified pae
+        /// </summary>
+        /// <param name="page">The page to go to</param>
+        public void GoToPage(ApplicationPage page)
+        {
+            CurrentPage = page;
+
+            // Show side menu or not ?
+
+            SideMenuVisible = page == ApplicationPage.Chat;
+        }
     }
 }

@@ -6,7 +6,7 @@ namespace Fasetto_Word
     /// <summary>
     /// Logique d'interaction pour LoginPage.xaml
     /// </summary>
-    public partial class RegisterPage : BasePage<LoginViewModel>, IHavePassword
+    public partial class RegisterPage : BasePage<RegisterViewModel>, IHavePassword
     {
         public RegisterPage()
         {

@@ -8,22 +8,12 @@ using System.Windows.Media.Animation;
 namespace Fasetto_Word
 {
     /// <summary>
-    /// A base page for all pages to gain base functionnality
+    /// The base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage<VM> : Page
-        where VM : BaseViewModel, new()
+    public class BasePage : Page
     {
+        #region Public properties
 
-        #region private members
-
-        /// <summary>
-        /// The view model associate with this page
-        /// </summary>
-        private VM mViewModel;
-
-        #endregion
-
-        #region public properties
         /// <summary>
         /// The animation played when the page is first loaded
         /// </summary>
@@ -37,27 +27,13 @@ namespace Fasetto_Word
         /// <summary>
         /// The time any slide animation take
         /// </summary>
-        public float SlideSeconds { get; set; } = 0.6f;
+        public float SlideSeconds { get; set; } = 0.4f;
 
         /// <summary>
-        /// The View Model associated with this page
+        /// A flag to indicate if this page should animate out on load
+        /// Useful for when we are moving the page to another frame
         /// </summary>
-        public VM ViewModel
-        {
-            get { return mViewModel; }
-            set
-            {
-                //if nothing has changed, return
-                if (mViewModel == value)
-                    return;
-
-                //update the value
-                mViewModel = value;
-
-                //set the data context for this page
-                this.DataContext = mViewModel;
-            }
-        }
+        public bool ShouldAnimateOut { get; set; }
 
         #endregion
 
@@ -73,9 +49,7 @@ namespace Fasetto_Word
 
             //Listen out for the page loading
             this.Loaded += BasePage_Loaded;
-
-            //Create a default view model
-            this.ViewModel = new VM();
+            
         }
 
         #endregion
@@ -89,8 +63,13 @@ namespace Fasetto_Word
         /// <param name="e"></param>
         private async void BasePage_Loaded(object sender, RoutedEventArgs e)
         {
-            //Animate the page In
-            await AnimateIn();
+            // If we are setup to animate out on load
+            if (ShouldAnimateOut)
+                // Animate out
+                await AnimateOut();
+            else
+                //Animate the page In
+                await AnimateIn();
         }
 
         /// <summary>
@@ -129,5 +108,60 @@ namespace Fasetto_Word
             }
         }
         #endregion
+
+    }
+
+    /// <summary>
+    /// A base page with added ViewModel support
+    /// </summary>
+    public class BasePage<VM> : BasePage
+        where VM : BaseViewModel, new()
+    {
+
+        #region private members
+
+        /// <summary>
+        /// The view model associate with this page
+        /// </summary>
+        private VM mViewModel;
+
+        #endregion
+
+        #region public properties
+
+        /// <summary>
+        /// The View Model associated with this page
+        /// </summary>
+        public VM ViewModel
+        {
+            get { return mViewModel; }
+            set
+            {
+                //if nothing has changed, return
+                if (mViewModel == value)
+                    return;
+
+                //update the value
+                mViewModel = value;
+
+                //set the data context for this page
+                this.DataContext = mViewModel;
+            }
+        }
+
+        #endregion
+
+        #region constructor
+        /// <summary>
+        /// Default cosntructor
+        /// </summary>
+        public BasePage() : base()
+        {
+            //Create a default view model
+            this.ViewModel = new VM();
+        }
+
+        #endregion
+        
     }
 }

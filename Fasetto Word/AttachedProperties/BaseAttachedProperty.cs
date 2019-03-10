@@ -13,7 +13,7 @@ namespace Fasetto_Word
     /// <typeparam name="Parent">The parent class to be the attached property</typeparam>
     /// <typeparam name="Property">Type of this attached property</typeparam>
     public abstract class BaseAttachedProperty<Parent, Property>
-        where Parent : BaseAttachedProperty<Parent, Property>, new()
+        where Parent : new()
     {
         #region public events
 
@@ -64,9 +64,9 @@ namespace Fasetto_Word
         private static object OnValuePropertyUpdated(DependencyObject d, object value)
         {
             //Call the parent function
-            Instance.OnValueUpdated(d, value);
+            (Instance as BaseAttachedProperty<Parent, Property>)?.OnValueUpdated(d, value);
             //Call event listener
-            Instance.ValueUpdated(d, value);
+            (Instance as BaseAttachedProperty<Parent, Property>)?.ValueUpdated(d, value);
 
             return value;
         }
@@ -79,9 +79,9 @@ namespace Fasetto_Word
         private static void OnValuePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             //Call the parent function
-            Instance.OnValueChanged(d, e);            
+            (Instance as BaseAttachedProperty<Parent, Property>)?.OnValueChanged(d, e);            
             //Call event listener
-            Instance.ValueChanged(d, e);
+            (Instance as BaseAttachedProperty<Parent, Property>)?.ValueChanged(d, e);
         }
 
         /// <summary>
