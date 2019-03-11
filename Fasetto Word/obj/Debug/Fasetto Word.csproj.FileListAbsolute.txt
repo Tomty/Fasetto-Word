@@ -101,3 +101,46 @@ C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPa
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPage.baml
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.g.cs
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto Word.exe.config
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto Word.exe
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto Word.pdb
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto.Word.Core.dll
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Ninject.dll
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fasetto.Word.Core.pdb
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Ninject.xml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csprojAssemblyReference.cache
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SideMenuControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\ChatPage.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPage.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\MainWindow.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\App.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word_MarkupCompile.cache
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word_MarkupCompile.lref
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\App.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListItemControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SideMenuControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\ChatPage.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\RegisterPage.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\LoginPage.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\MainWindow.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Colors.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Windows.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Texts.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Buttons.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Fonts.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.g.resources
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto_Word.Properties.Resources.resources
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csproj.GenerateResource.cache
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csproj.CoreCompileInputs.cache
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csproj.CopyComplete
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.exe
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.pdb
