@@ -24,3 +24,5 @@ C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\obj\Debu
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CopyComplete
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.dll
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.pdb
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.dll
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.xml
