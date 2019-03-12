@@ -17,8 +17,8 @@ namespace Fasetto_Word
             // Get the frame
             var frame = (sender as Frame);
 
-            // Hide navigation bar
-            //frame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
+            //Hide navigation bar
+            frame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
 
             //Clear history on navigate
             frame.Navigated += (ss, ee) => ((Frame)ss).NavigationService.RemoveBackEntry();

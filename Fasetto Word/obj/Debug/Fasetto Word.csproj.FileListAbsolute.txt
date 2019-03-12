@@ -111,8 +111,6 @@ C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Fas
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Microsoft.Windows.Shell.pdb
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\bin\Debug\Ninject.xml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csprojAssemblyReference.cache
-C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListControl.g.cs
-C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.g.cs
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SideMenuControl.g.cs
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\ChatPage.g.cs
@@ -124,8 +122,6 @@ C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Gen
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word_MarkupCompile.cache
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word_MarkupCompile.lref
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\App.baml
-C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListControl.baml
-C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatListItemControl.baml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\PageHost.baml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SideMenuControl.baml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Pages\ChatPage.baml
@@ -144,3 +140,11 @@ C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fas
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.csproj.CopyComplete
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.exe
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.pdb
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatList\ChatListControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.g.cs
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatList\ChatListControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.baml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.baml

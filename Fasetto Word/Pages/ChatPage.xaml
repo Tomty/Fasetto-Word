@@ -14,7 +14,7 @@
 
     <Border>
 
-        <TextBlock Text="Hello fasetto" HorizontalAlignment="center" Foreground="Black" VerticalAlignment="Center" FontSize="{StaticResource FontSizeLarge}" />
+        <local:ChatMessageListControl />
 
     </Border>
     

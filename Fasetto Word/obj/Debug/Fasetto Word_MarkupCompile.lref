@@ -1,7 +1,9 @@
-﻿C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\App.xaml;;
-FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatListControl.xaml;;
-FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatListItemControl.xaml;;
+FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatList\ChatListControl.xaml;;
+FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatList\ChatListItemControl.xaml;;
+FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatMessage\ChatMessageListControl.xaml;;
+FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\Chat\ChatMessage\ChatMessageListItemControl.xaml;;
 FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\PageHost.xaml;;
 FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Controls\SideMenuControl.xaml;;
 FC:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\Pages\ChatPage.xaml;;
