@@ -152,3 +152,4 @@ C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\Ch
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.baml
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.baml
 C:\Users\thoma\Source\Repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.baml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Scroll.baml
