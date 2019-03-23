@@ -26,6 +26,9 @@
     <Color x:Key="WordLightBlue">#45b6e5</Color>
     <SolidColorBrush x:Key="WordLightBlueBrush" Color="{StaticResource WordLightBlue}" />
 
+    <Color x:Key="WordVeryVeryLightBlue">#ecf6fb</Color>
+    <SolidColorBrush x:Key="WordVeryVeryLightBlueBrush" Color="{StaticResource WordVeryLightBlue}" />
+
     <Color x:Key="WordVeryLightBlue">#c3e5f3</Color>
     <SolidColorBrush x:Key="WordVeryLightBlueBrush" Color="{StaticResource WordVeryLightBlue}" />
 

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Fasetto.Word.Core.IoC;
+using Fasetto.Word.Core.ViewModels;
+using System;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -38,6 +41,13 @@ namespace Fasetto_Word
         public PageHost()
         {
             InitializeComponent();
+
+            // If we are in DesignMode, show the current page
+            // as the dependency property does not fire
+            if(DesignerProperties.GetIsInDesignMode(this))
+            {
+                this.NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage);
+            }
         }
 
         #endregion
@@ -67,12 +77,19 @@ namespace Fasetto_Word
             // Animate out previous page when the loaded event fires
             // right after this call due to moving frames
             if (oldPageContent is BasePage oldPage)
+            {
+                // Tell old page to animate out
                 oldPage.ShouldAnimateOut = true;
 
+                // once it's done, remove it
+                Task.Delay((int)(oldPage.SlideSeconds * 1000)).ContinueWith((t) =>
+                {
+                    // Jump back to UI Thread and Remove old page
+                    Application.Current.Dispatcher.Invoke(() => oldPageFrame.Content = null);
+                });
+            }
             // Set the new page content
             newPageFrame.Content = e.NewValue;
-
-            
         } 
         #endregion
     }

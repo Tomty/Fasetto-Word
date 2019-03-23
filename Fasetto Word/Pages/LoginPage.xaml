@@ -9,8 +9,7 @@
       mc:Ignorable="d"
       x:Name="Page"
       Background="Transparent"
-      d:DesignHeight="700" d:DesignWidth="700"
-      Title="LoginPage">
+      d:DesignHeight="700" d:DesignWidth="700">
 
     <Border>
         
@@ -48,13 +47,14 @@
                                 Foreground="{StaticResource ForegroundDarkBrush}"/>
 
                             <!-- Email -->
-                            <TextBox Text="{Binding Email}" Tag="Email" />
+                            <TextBox local:IsFocusedProperty.Value="True" Text="{Binding Email}" Tag="Email" />
 
                             <!-- password -->
                             <PasswordBox x:Name="PasswordText" Tag="Password"/>
 
                             <!-- login button -->
                             <Button 
+                                IsDefault="True"
                                 Content="Login"
                                 local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                 Command="{Binding LoginCommand}" 

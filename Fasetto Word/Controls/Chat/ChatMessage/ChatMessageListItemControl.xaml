@@ -10,7 +10,6 @@
     <Border Padding="5"
             d:DataContext="{x:Static core:ChatMessageListItemDesignModel.Instance}">
         <Grid>
-            
             <!-- Profile Picture -->
             <Border VerticalAlignment="Top"
                     HorizontalAlignment="Left"
@@ -79,16 +78,20 @@
                       Stroke="Black" 
                       Margin="15 -1 15 0"
                       StrokeThickness="0" 
+                      HorizontalAlignment="{Binding SentByMe, Converter={local:SentByMeToAlignementConverter}}"
                       Fill="{Binding SentByMe, Converter={local:SentByMeToBackgroundConverter}}"
                       Data="M 0,0 L 10,10 L 20,0"/>
 
                 <!-- Time container -->
-                <StackPanel Name="ExtraDetails" Grid.Row="2" Orientation="Horizontal" Opacity="0">
+                <StackPanel Name="ExtraDetails" 
+                            Grid.Row="2" 
+                            Orientation="Horizontal" 
+                            Opacity="0"
+                            HorizontalAlignment="{Binding SentByMe, Converter={local:SentByMeToAlignementConverter}, ConverterParameter=True}">
                     <!-- Sent time-->
                     <TextBlock Grid.Row="2" 
                            Text="{Binding MessageSentTime, Converter={local:TimeToDisplayTimeConverter}}"
                            Foreground="{StaticResource ForegroundLightBrush}"
-                           HorizontalAlignment="Right" 
                            FontSize="{StaticResource FontSizeSmall}"
                            FontFamily="{StaticResource LatoRegular}"
                            Margin="0 0 15 0"
@@ -97,13 +100,10 @@
                     <TextBlock Grid.Row="2" 
                            Text="{Binding MessageReadTime, Converter={local:TimeToReadTimeConverter}}"
                            Foreground="{StaticResource WordDarkBlueBrush}"
-                           HorizontalAlignment="Right" 
                            FontSize="{StaticResource FontSizeSmall}"
                            FontFamily="{StaticResource LatoRegular}"
                            />
                 </StackPanel>
-                
-
             </Grid>
         </Grid>
             
