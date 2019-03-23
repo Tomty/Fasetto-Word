@@ -10,8 +10,6 @@ C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Fasetto.Wor
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csprojAssemblyReference.cache
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Ninject.dll
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Ninject.xml
-C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.dll
-C:\Users\thoma\source\repos\Fasetto-Word\Fasetto.Word.Core\bin\Debug\PropertyChanged.xml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.dll
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.pdb
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.dll

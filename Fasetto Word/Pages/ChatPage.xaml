@@ -11,10 +11,49 @@
       Background="Transparent"
       d:DesignHeight="700" d:DesignWidth="700">
 
-    <Border>
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <!-- Title Bar -->
+            <RowDefinition Height="Auto"/>
+            
+            <!-- Chat list -->
+            <RowDefinition Height="*" />
+            
+            <!-- Mesage send text box -->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        <local:ChatMessageListControl />
+        <!-- Title bar -->
+        <Grid Height="50">
 
-    </Border>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- Title text -->
+            <TextBlock Text="Parnell"
+                       Foreground="{StaticResource ForegroundLightBrush}"
+                       FontSize="{StaticResource FontSizeXLarge}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Grid.ColumnSpan="2"
+                       FontFamily="{StaticResource LatoRegular}"
+                       />
+
+            <!-- Main buttons -->
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Button Style="{StaticResource IconButton}" Content="{StaticResource FontAwesomeSearchIcon}"/>
+                <Button Style="{StaticResource IconButton}" Content="{StaticResource FontAwesomeEllipsisVerticalIcon}"/>
+            </StackPanel>
+
+        </Grid>
+        
+
+        <!-- Chat list -->
+        <local:ChatMessageListControl Grid.Row="1"/>
+
+    </Grid>
     
 </local:BasePage>
