@@ -20,7 +20,7 @@ namespace Fasetto_Word
     /// <summary>
     /// Logique d'interaction pour ChatPage.xaml
     /// </summary>
-    public partial class ChatPage : BasePage<LoginViewModel>
+    public partial class ChatPage : BasePage<ChatMessageListViewModel>
     {
         public ChatPage()
         {

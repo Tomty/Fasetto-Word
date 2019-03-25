@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Fasetto.Word.Core
 {
@@ -11,11 +12,54 @@ namespace Fasetto.Word.Core
     /// </summary>
     public class ChatMessageListViewModel : BaseViewModel
     {
+        #region Public Properties
+
         /// <summary>
         /// The chat thread items for the list
         /// </summary>
         public List<ChatMessageListItemViewModel> Items { get; set; }
-        
+
+        /// <summary>
+        /// True to show the attachement menu, false to hide 
+        /// </summary>
+        public bool AttachementMenuVisible { get; set; }
+
+        #endregion
+
+        #region Public Commands
+
+        /// <summary>
+        /// The command for when the attachement button is clicked
+        /// </summary>
+        public ICommand AttachementButtonCommand { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Defautl constructor
+        /// </summary>
+        public ChatMessageListViewModel()
+        {
+            AttachementButtonCommand = new RelayCommand(AttachmentButton);
+        }
+
+        #endregion
+
+        #region Command Methods
+
+        /// <summary>
+        /// When the attachement button is clicked show/hide the attachement popup
+        /// </summary>
+        public void AttachmentButton()
+        {
+            // toggle menu visibility
+            AttachementMenuVisible ^= true;
+        }
+
+        #endregion
+
     }
 
 }
