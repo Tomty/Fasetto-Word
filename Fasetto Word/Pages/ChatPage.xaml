@@ -54,9 +54,14 @@
         <local:ChatMessageListControl Grid.Row="1"/>
         
         <!-- Attachement menu popup -->
-        <local:BubbleContent Grid.Row="1"
-                             VerticalAlignment="Bottom"
-                             HorizontalAlignment="Left"/>
+        <local:BubbleContent 
+            Grid.Row="1"
+            DataContext="{Binding AttachmentMenu}"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            local:AnimateSlideInFromBottomProperty.Value="{Binding ViewModel.AttachementMenuVisible, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:ChatPage}}}"
+            
+        />
 
         <!-- message send text box -->
         <Grid Grid.Row="2" MinHeight="50" MaxHeight="115" Background="{StaticResource ForegroundLightBrush}">
@@ -73,7 +78,7 @@
             <!-- Attach button -->
             <Button Style="{StaticResource IconGrowButton}"
                     VerticalAlignment="Top"
-                    Command="{Binding AttachmentButtonCommand}"
+                    Command="{Binding AttachementButtonCommand}"
                     Content="{StaticResource FontAwesomePaperclipIcon}"
                     Foreground="{StaticResource ForegroundDarkBrush}"
                     Height="{Binding MinHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
@@ -105,9 +110,6 @@
                     
             </StackPanel>
             
-            
-
-
         </Grid>
 
     </Grid>

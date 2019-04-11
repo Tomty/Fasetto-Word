@@ -4,9 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Fasetto_Word"
+             xmlns:core="clr-namespace:Fasetto.Word.Core;assembly=Fasetto.Word.Core"
              mc:Ignorable="d" 
+             d:DataContext="{x:Static core:ChatAttachmentPopupMenuDesignModel.Instance}"
              d:DesignHeight="100" d:DesignWidth="300">
 
+    <!-- Chat message container -->
     <Grid>
 
 
@@ -18,7 +21,7 @@
         <!-- Speech Bubble rectangle -->
         <Border CornerRadius="10"
                 Padding="15"             
-                Background="{StaticResource ForegroundLightBrush}"
+                Background="{Binding BubbleBackground, Converter={local:StringRGBToBrushConverter}}"
                 Margin="5 0 0 0">
 
             <Border.Effect>
@@ -40,8 +43,8 @@
                       Stroke="Black" 
                       Margin="15 -1 15 0"
                       StrokeThickness="0" 
-                      HorizontalAlignment="Left"
-                      Fill="{StaticResource ForegroundLightBrush}"
+                      HorizontalAlignment="{Binding arrowAlignement, Converter={local:HorizontalAlignmentConverter}}"
+                      Fill="{Binding BubbleBackground, Converter={local:StringRGBToBrushConverter}}"
                       Data="M 0,0 L 10,10 L 20,0">
             
             <Path.Effect>

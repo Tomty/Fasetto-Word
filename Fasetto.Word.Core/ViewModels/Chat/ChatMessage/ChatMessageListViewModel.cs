@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Fasetto.Word.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +26,8 @@ namespace Fasetto.Word.Core
         /// </summary>
         public bool AttachementMenuVisible { get; set; }
 
+        public ChatAttachmentPopupMenuViewModel AttachmentMenu { get; set; }
+
         #endregion
 
         #region Public Commands
@@ -43,6 +47,9 @@ namespace Fasetto.Word.Core
         public ChatMessageListViewModel()
         {
             AttachementButtonCommand = new RelayCommand(AttachmentButton);
+
+            //Make a default menu
+            AttachmentMenu = new ChatAttachmentPopupMenuViewModel();
         }
 
         #endregion

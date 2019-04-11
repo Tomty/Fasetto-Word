@@ -10,6 +10,53 @@ namespace Fasetto_Word
     /// </summary>
     public static class StoryboardHelpers
     {
+        #region Fading
+
+        /// <summary>
+        /// Adds a fade in animation to the storyboard
+        /// </summary>
+        /// <param name="storyboard">The storyboard to add the animaion to</param>
+        /// <param name="seconds">the time the animation will take</param>
+        public static void AddFadeIn(this Storyboard storyboard, float seconds)
+        {
+            //Create the margin animate from right
+            var animation = new DoubleAnimation
+            {
+                Duration = new Duration(TimeSpan.FromSeconds(seconds)),
+                From = 0,
+                To = 1
+            };
+            //Set the target property name
+            Storyboard.SetTargetProperty(animation, new PropertyPath("Opacity"));
+            //Add this to the storyboard
+            storyboard.Children.Add(animation);
+        }
+
+        /// <summary>
+        /// Adds a fade out animation to the storyboard
+        /// </summary>
+        /// <param name="storyboard">The storyboard to add the animaion to</param>
+        /// <param name="seconds">the time the animation will take</param>
+        public static void AddFadeOut(this Storyboard storyboard, float seconds)
+        {
+            //Create the margin animate from right
+            var animation = new DoubleAnimation
+            {
+                Duration = new Duration(TimeSpan.FromSeconds(seconds)),
+                From = 1,
+                To = 0
+            };
+            //Set the target property name
+            Storyboard.SetTargetProperty(animation, new PropertyPath("Opacity"));
+            //Add this to the storyboard
+            storyboard.Children.Add(animation);
+        }
+
+
+        #endregion
+
+        #region Slide From
+
         /// <summary>
         /// Adds a slide from right animation to the storyboard
         /// </summary>
@@ -18,13 +65,13 @@ namespace Fasetto_Word
         /// <param name="offset">the distance to the right to start from</param>
         /// <param name="decelerationRatio">The rate of deceleration</param>
         /// <param name="keepMargin">Wheter to keep the element at the same width during animation</param>
-        public static void AddSlideFromRight(this Storyboard storyboard, float seconds, double offset, float decelerationRatio = 0.9f, bool keepMargin = true )
+        public static void AddSlideFromRight(this Storyboard storyboard, float seconds, double offset, float decelerationRatio = 0.9f, bool keepMargin = true)
         {
             //Create the margin animate from right
             var animation = new ThicknessAnimation
             {
                 Duration = new Duration(TimeSpan.FromSeconds(seconds)),
-                From = new Thickness(keepMargin ? offset: 0, 0, -offset, 0),
+                From = new Thickness(keepMargin ? offset : 0, 0, -offset, 0),
                 To = new Thickness(0),
                 DecelerationRatio = decelerationRatio
             };
@@ -59,24 +106,32 @@ namespace Fasetto_Word
         }
 
         /// <summary>
-        /// Adds a fade in animation to the storyboard
+        /// Adds a slide from bottom animation to the storyboard
         /// </summary>
         /// <param name="storyboard">The storyboard to add the animaion to</param>
         /// <param name="seconds">the time the animation will take</param>
-        public static void AddFadeIn(this Storyboard storyboard, float seconds)
+        /// <param name="offset">the distance to the bottom to start from</param>
+        /// <param name="decelerationRatio">The rate of deceleration</param>
+        /// <param name="keepMargin">Wheter to keep the element at the same height during animation</param>
+        public static void AddSlideFromBottom(this Storyboard storyboard, float seconds, double offset, float decelerationRatio = 0.9f, bool keepMargin = true)
         {
             //Create the margin animate from right
-            var animation = new DoubleAnimation
+            var animation = new ThicknessAnimation
             {
                 Duration = new Duration(TimeSpan.FromSeconds(seconds)),
-                From = 0,
-                To = 1
+                From = new Thickness(0, keepMargin ? offset : 0, 0, -offset),
+                To = new Thickness(0),
+                DecelerationRatio = decelerationRatio
             };
             //Set the target property name
-            Storyboard.SetTargetProperty(animation, new PropertyPath("Opacity"));
+            Storyboard.SetTargetProperty(animation, new PropertyPath("Margin"));
             //Add this to the storyboard
             storyboard.Children.Add(animation);
         }
+
+        #endregion
+
+        #region Slide To
 
         /// <summary>
         /// Adds a slide to left animation to the storyboard
@@ -93,7 +148,7 @@ namespace Fasetto_Word
             {
                 Duration = new Duration(TimeSpan.FromSeconds(seconds)),
                 From = new Thickness(0),
-                To = new Thickness(-offset, 0, keepMargin? offset : 0, 0),
+                To = new Thickness(-offset, 0, keepMargin ? offset : 0, 0),
                 DecelerationRatio = decelerationRatio
             };
             //Set the target property name
@@ -126,24 +181,33 @@ namespace Fasetto_Word
             storyboard.Children.Add(animation);
         }
 
+
         /// <summary>
-        /// Adds a fade out animation to the storyboard
+        /// Adds a slide to bottom animation to the storyboard
         /// </summary>
         /// <param name="storyboard">The storyboard to add the animaion to</param>
         /// <param name="seconds">the time the animation will take</param>
-        public static void AddFadeOut(this Storyboard storyboard, float seconds)
+        /// <param name="offset">the distance to the up to end at</param>
+        /// <param name="decelerationRatio">The rate of deceleration</param>
+        /// <param name="keepMargin">Wheter to keep the element at the same height during animation</param>
+        public static void AddSlideToBottom(this Storyboard storyboard, float seconds, double offset, float decelerationRatio = 0.9f, bool keepMargin = true)
         {
             //Create the margin animate from right
-            var animation = new DoubleAnimation
+            var animation = new ThicknessAnimation
             {
                 Duration = new Duration(TimeSpan.FromSeconds(seconds)),
-                From = 1,
-                To = 0
+                From = new Thickness(0),
+                To = new Thickness(0, keepMargin ? offset : 0, 0, -offset),
+                DecelerationRatio = decelerationRatio
             };
             //Set the target property name
-            Storyboard.SetTargetProperty(animation, new PropertyPath("Opacity"));
+            Storyboard.SetTargetProperty(animation, new PropertyPath("Margin"));
             //Add this to the storyboard
             storyboard.Children.Add(animation);
         }
+
+
+        #endregion
+
     }
 }

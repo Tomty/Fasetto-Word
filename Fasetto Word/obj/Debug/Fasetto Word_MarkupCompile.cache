@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\
 Fasetto_Word
 none
 false
 DEBUG;TRACE
-C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\App.xaml
+C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\App.xaml
 17346809153
 
-38673638837
-71-1489534745
+39-183687055
+71-202778569
 Controls\BubbleContent.xaml;Controls\Chat\ChatList\ChatListControl.xaml;Controls\Chat\ChatList\ChatListItemControl.xaml;Controls\Chat\ChatMessage\ChatMessageListControl.xaml;Controls\Chat\ChatMessage\ChatMessageListItemControl.xaml;Controls\PageHost.xaml;Controls\SideMenuControl.xaml;Pages\ChatPage.xaml;Pages\RegisterPage.xaml;Pages\LoginPage.xaml;MainWindow.xaml;Styles\Scroll.xaml;Styles\Colors.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Buttons.xaml;Styles\Fonts.xaml;
 
 False
