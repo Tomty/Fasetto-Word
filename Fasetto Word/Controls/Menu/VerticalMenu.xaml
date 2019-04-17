@@ -98,7 +98,7 @@
                                        Padding="5"
                                        VerticalAlignment="Center"
                                        FontFamily="{StaticResource FontAwesome}"
-                                       Text="{StaticResource FontAwesomeChatIcon}"
+                                       Text="{Binding Icon, Converter={local:IconTypeToFontAwesomeConverter} }"
                                        Foreground="{StaticResource ForegroundDarkBrush}"/>
                             
                             <!-- Text -->
