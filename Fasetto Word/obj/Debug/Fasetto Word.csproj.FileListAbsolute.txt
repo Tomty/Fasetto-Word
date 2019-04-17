@@ -158,3 +158,5 @@ C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\BubbleC
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\BubbleContent.g.cs
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Controls\BubbleContent.baml
 C:\Users\Tomty\source\repos\Fasetto Word\Fasetto-Word\Fasetto Word\obj\Debug\Styles\Scroll.baml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Menu\VerticalMenu.g.cs
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\Menu\VerticalMenu.baml

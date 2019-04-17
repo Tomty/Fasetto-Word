@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="DataModels\ApplicationPage.cs" />
     <Compile Include="DataModels\ElementHorizontalAlignment.cs" />
+    <Compile Include="DataModels\IconType.cs" />
+    <Compile Include="DataModels\MenuItemType.cs" />
     <Compile Include="Expressions\ExpressionHelpers.cs" />
     <Compile Include="IoC\IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +75,10 @@
     <Compile Include="ViewModels\Chat\ChatMessage\Design\ChatMessageListDesignModel.cs" />
     <Compile Include="ViewModels\Chat\ChatMessage\Design\ChatMessageListItemDesignModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Menu\Design\MenuDesignModel.cs" />
+    <Compile Include="ViewModels\Menu\Design\MenuItemDesignModel.cs" />
+    <Compile Include="ViewModels\Menu\MenuItemViewModel.cs" />
+    <Compile Include="ViewModels\Menu\MenuViewModel.cs" />
     <Compile Include="ViewModels\PopupMenu\Design\ChatAttachmentPopupMenuDesignModel.cs" />
     <Compile Include="ViewModels\PopupMenu\ChatAttachmentPopupMenuViewModel.cs" />
     <Compile Include="ViewModels\PopupMenu\BasePopupMenuViewModel.cs" />
@@ -84,6 +90,7 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.3.3.2\build\Fody.targets" Condition="Exists('..\packages\Fody.3.3.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

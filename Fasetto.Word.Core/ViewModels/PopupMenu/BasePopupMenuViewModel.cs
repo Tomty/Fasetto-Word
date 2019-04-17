@@ -20,6 +20,11 @@ namespace Fasetto.Word.Core
         /// </summary>
         public ElementHorizontalAlignment arrowAlignement { get; set; }
 
+        /// <summary>
+        /// The content inside of this popup menu
+        /// </summary>
+        public BaseViewModel Content { get; set; }
+
 
         #endregion
 
