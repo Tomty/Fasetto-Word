@@ -75,7 +75,7 @@ namespace Fasetto.Word.Core
                 await Task.Delay(1000);
 
                 // Go to chat Page
-                IoC.IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat);
+                IoC.IoC.Application.GoToPage(ApplicationPage.Chat);
 
 
                 //var email = Email;
@@ -93,12 +93,12 @@ namespace Fasetto.Word.Core
         public async Task Register()
         {
 
-           // IoC.IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
+           // IoC.IoC.Application.SideMenuVisible ^= true;
 
             //return;
 
             // Go to register page
-            IoC.IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
+            IoC.IoC.Application.GoToPage(ApplicationPage.Register);
 
             await Task.Delay(1);
         }

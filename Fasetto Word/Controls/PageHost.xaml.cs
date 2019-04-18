@@ -46,7 +46,7 @@ namespace Fasetto_Word
             // as the dependency property does not fire
             if(DesignerProperties.GetIsInDesignMode(this))
             {
-                this.NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage);
+                this.NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Application.CurrentPage);
             }
         }
 

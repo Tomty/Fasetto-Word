@@ -20,7 +20,7 @@ namespace Fasetto_Word
             {
                 //Find the appopriate page
                 case nameof(ApplicationViewModel):
-                    return IoC.Get<ApplicationViewModel>(); ;
+                    return IoC.Application; ;
                 default:
                     Debugger.Break();
                     return null;

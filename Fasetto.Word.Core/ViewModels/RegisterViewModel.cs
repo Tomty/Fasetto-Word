@@ -83,12 +83,12 @@ namespace Fasetto.Word.Core
         public async Task Login()
         {
 
-           // IoC.IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
+           // IoC.IoC.Application.SideMenuVisible ^= true;
 
             //return;
 
             // Go to login page
-            IoC.IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Login);
+            IoC.IoC.Application.GoToPage(ApplicationPage.Login);
 
             await Task.Delay(1);
         }

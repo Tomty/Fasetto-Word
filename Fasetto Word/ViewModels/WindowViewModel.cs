@@ -1,4 +1,6 @@
 ﻿using Fasetto.Word.Core;
+using Fasetto.Word.Core.IoC;
+using Fasetto.Word.Core.ViewModels;
 using System.Windows;
 using System.Windows.Input;
 
@@ -118,6 +120,15 @@ namespace Fasetto_Word
         /// </summary>
         public bool DimmableOverlayVisible { get; set; }
 
+        /// <summary>
+        /// True if we should show teh settigns menu
+        /// </summary>
+        public bool SettignsMenuVisible
+        {
+            get => IoC.Application.SideMenuVisible;            
+            set => IoC.Application.SideMenuVisible = value;
+        }
+        
         #endregion
 
         #region Commands
