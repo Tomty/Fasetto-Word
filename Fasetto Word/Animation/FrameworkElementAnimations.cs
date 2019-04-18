@@ -69,6 +69,9 @@ namespace Fasetto_Word
 
             //Wait for it to finish
             await Task.Delay((int)(seconds * 1000));
+
+            // Fully hide the element
+            element.Visibility = Visibility.Hidden;
         }
 
         #endregion
@@ -131,6 +134,9 @@ namespace Fasetto_Word
 
             //Wait for it to finish
             await Task.Delay((int)(seconds * 1000));
+
+            // Fully hide the element
+            element.Visibility = Visibility.Hidden;
         }
 
         #endregion
@@ -193,6 +199,9 @@ namespace Fasetto_Word
 
             //Wait for it to finish
             await Task.Delay((int)(seconds * 1000));
+
+            // Fully hide the element
+            element.Visibility = Visibility.Hidden;
         }
 
         #endregion
@@ -222,6 +231,7 @@ namespace Fasetto_Word
 
             //Wait for it to finish
             await Task.Delay((int)(seconds * 1000));
+
         }
 
         /// <summary>
@@ -248,7 +258,7 @@ namespace Fasetto_Word
             await Task.Delay((int)(seconds * 1000));
 
             // Fully hide the element
-            element.Visibility = Visibility.Collapsed;
+            element.Visibility = Visibility.Hidden;
         }
 
         #endregion
