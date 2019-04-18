@@ -119,15 +119,6 @@ namespace Fasetto_Word
         /// such as when a popup is visible or the window is not focus
         /// </summary>
         public bool DimmableOverlayVisible { get; set; }
-
-        /// <summary>
-        /// True if we should show teh settigns menu
-        /// </summary>
-        public bool SettignsMenuVisible
-        {
-            get => IoC.Application.SideMenuVisible;            
-            set => IoC.Application.SideMenuVisible = value;
-        }
         
         #endregion
 

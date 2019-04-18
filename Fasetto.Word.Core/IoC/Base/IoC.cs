@@ -23,7 +23,13 @@ namespace Fasetto.Word.Core.IoC
         /// <summary>
         /// A shortcut to access the <see cref="ApplicationViewModel"/>
         /// </summary>
-        public static ApplicationViewModel Application => IoC.Application;
+        public static ApplicationViewModel Application => IoC.Get<ApplicationViewModel>();
+
+
+        /// <summary>
+        /// A shortcut to access the <see cref="SettingsViewModel"/>
+        /// </summary>
+        public static SettingsViewModel Settings => IoC.Get<SettingsViewModel>();
 
         #endregion
 
@@ -46,6 +52,9 @@ namespace Fasetto.Word.Core.IoC
         {
             // Bind to a single instance of ApplicationViewModel
             Kernel.Bind<ApplicationViewModel>().ToConstant(new ApplicationViewModel());
+
+            // Bind to a single instance of SettingsViewModel
+            Kernel.Bind<SettingsViewModel>().ToConstant(new SettingsViewModel());
         }
         #endregion
 

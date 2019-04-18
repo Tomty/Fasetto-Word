@@ -1,4 +1,5 @@
-﻿using Fasetto.Word.Core.IoC;
+﻿using Fasetto.Word.Core;
+using Fasetto.Word.Core.IoC;
 using Fasetto.Word.Core.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,12 @@ namespace Fasetto_Word
         /// The application view model
         /// </summary>
         public static ApplicationViewModel ApplicationViewModel => IoC.Application;
+
+
+        /// <summary>
+        /// The Settings view model
+        /// </summary>
+        public static SettingsViewModel SettingsViewModel => IoC.Settings;
 
     }
 }
