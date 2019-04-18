@@ -9,7 +9,7 @@ namespace Fasetto_Word
     /// <summary>
     /// Fovuses (keyboard focus) this element on load
     /// </summary>
-    class IsFocusedProperty : BaseAttachedProperty<IsFocusedProperty, bool>
+    public class IsFocusedProperty : BaseAttachedProperty<IsFocusedProperty, bool>
     {
         public override void OnValueChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {

@@ -7,7 +7,7 @@ namespace Fasetto_Word
     /// <summary>
     /// The view model for the custom window
     /// </summary>
-    class WindowViewModel : BaseViewModel
+    public class WindowViewModel : BaseViewModel
     {
         #region private members
 

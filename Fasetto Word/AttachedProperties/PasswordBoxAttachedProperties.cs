@@ -1,7 +1,4 @@
-﻿
-
-using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace Fasetto_Word
@@ -48,7 +45,7 @@ namespace Fasetto_Word
     /// <summary>
     /// The HasText attached property for a <see cref="PasswordBox"/>
     /// </summary>
-    class HasTextProperty : BaseAttachedProperty<HasTextProperty, bool>
+    public class HasTextProperty : BaseAttachedProperty<HasTextProperty, bool>
     {
         /// <summary>
         /// Set the HasTextProperty based on if the caller <see cref="PasswordBox"/> has any text

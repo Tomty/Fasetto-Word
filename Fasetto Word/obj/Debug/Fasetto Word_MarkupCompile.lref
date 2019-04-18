@@ -1,4 +1,4 @@
-﻿C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\App.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\BubbleContent.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\Chat\ChatList\ChatListControl.xaml;;
@@ -8,6 +8,7 @@ FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\Chat\ChatMessage
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\Menu\VerticalMenu.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\PageHost.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Controls\SideMenuControl.xaml;;
+FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\DialogWindow.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Pages\ChatPage.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Pages\RegisterPage.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Pages\LoginPage.xaml;;
@@ -18,4 +19,5 @@ FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Styles\Windows.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Styles\Texts.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Styles\Buttons.xaml;;
 FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Styles\Fonts.xaml;;
+FC:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\Dialogs\DialogMessageBox.xaml;;
 

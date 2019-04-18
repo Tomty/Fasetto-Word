@@ -1,4 +1,5 @@
-﻿using Fasetto.Word.Core.IoC;
+﻿using Fasetto.Word.Core;
+using Fasetto.Word.Core.IoC;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -23,11 +24,23 @@ namespace Fasetto_Word
             // Let the base application do what it needs
             base.OnStartup(e);
 
-            IoC.Setup();
+            // Setup the main application
+            ApplicationSetup();
+
+            
 
             // Show main Window
             Current.MainWindow = new MainWindow();
             Current.MainWindow.Show();
+        }
+
+        private void ApplicationSetup()
+        {
+            // Setup IoC
+            IoC.Setup();
+
+            // Bind a UI Manager
+            IoC.Kernel.Bind<IUIManager>().ToConstant(new UIManager());
         }
     }
 }
