@@ -108,5 +108,24 @@ namespace Fasetto_Word
         }
     }
 
+    /// <summary>
+    /// Animate a framework element fading it on show and fading out on hide
+    /// </summary>
+    public class AnimateFadeInProperty : AnimateBaseProperty<AnimateFadeInProperty>
+    {
+        protected override async void DoAnimation(FrameworkElement element, bool value)
+        {
+            if (value)
+            {
+                // Animate in
+                await element.FadeIn(FirstLoad ? 0 : 0.3f);
+            }
+            else
+            {
+                // Animate out
+                await element.FadeOut(FirstLoad ? 0 : 0.3f);
+            }
+        }
+    }
 
 }

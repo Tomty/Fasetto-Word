@@ -112,6 +112,12 @@ namespace Fasetto_Word
         /// </summary>
         public GridLength TitleHeightGridLenght { get { return new GridLength(TitleHeight + ResizeBorder); } }
 
+        /// <summary>
+        /// True if we should have a dimmed overlay on teh window
+        /// such as when a popup is visible or the window is not focus
+        /// </summary>
+        public bool DimmableOverlayVisible { get; set; }
+
         #endregion
 
         #region Commands

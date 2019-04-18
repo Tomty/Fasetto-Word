@@ -196,6 +196,62 @@ namespace Fasetto_Word
         }
 
         #endregion
-        
+
+
+        #region Fade In / Out
+
+        /// <summary>
+        /// Fades an element in
+        /// </summary>
+        /// <param name="element">the element to animate</param>
+        /// <param name="seconds">the time the animation will take</param>
+        /// <returns></returns>
+        public static async Task FadeIn(this FrameworkElement element, float seconds = 0.3f)
+        {
+            //Create the storyboard
+            var sb = new Storyboard();
+
+            //Add fade in animation
+            sb.AddFadeIn(seconds);
+
+            //Start animating 
+            sb.Begin(element);
+
+            //Make page visible
+            element.Visibility = Visibility.Visible;
+
+            //Wait for it to finish
+            await Task.Delay((int)(seconds * 1000));
+        }
+
+        /// <summary>
+        /// Slides an element out to the Bottom
+        /// </summary>
+        /// <param name="element">the element to animate</param>
+        /// <param name="seconds">the time the animation will take</param>
+        /// <returns></returns>
+        public static async Task FadeOut(this FrameworkElement element, float seconds = 0.3f)
+        {
+            //Create the storyboard
+            var sb = new Storyboard();
+
+            //Add fade in animation
+            sb.AddFadeOut(seconds);
+
+            //Start animating 
+            sb.Begin(element);
+
+            //Make page visible
+            element.Visibility = Visibility.Visible;
+
+            //Wait for it to finish
+            await Task.Delay((int)(seconds * 1000));
+
+            // Fully hide the element
+            element.Visibility = Visibility.Collapsed;
+        }
+
+        #endregion
+
     }
 }
