@@ -54,3 +54,5 @@ C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.exe
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Fasetto Word.pdb
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Dialogs\DialogMessageBox.g.cs
 C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Dialogs\DialogMessageBox.baml
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SettingsControl.g.cs
+C:\Users\thoma\source\repos\Fasetto-Word\Fasetto Word\obj\Debug\Controls\SettingsControl.baml
