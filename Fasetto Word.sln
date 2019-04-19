@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fasetto Word", "Fasetto Word\Fasetto Word.csproj", "{EDDB008C-9E90-41AD-A216-6BAD2BB9DBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fasetto.Word.Core", "Fasetto.Word.Core\Fasetto.Word.Core.csproj", "{CF6D66A9-2D68-4A3E-B9E7-88F82C0BA66D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDDB008C-9E90-41AD-A216-6BAD2BB9DBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDB008C-9E90-41AD-A216-6BAD2BB9DBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDB008C-9E90-41AD-A216-6BAD2BB9DBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDB008C-9E90-41AD-A216-6BAD2BB9DBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6D66A9-2D68-4A3E-B9E7-88F82C0BA66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6D66A9-2D68-4A3E-B9E7-88F82C0BA66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6D66A9-2D68-4A3E-B9E7-88F82C0BA66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6D66A9-2D68-4A3E-B9E7-88F82C0BA66D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {604568D4-35EC-4A21-9EE0-F46166F081B3}
+	EndGlobalSection
+EndGlobal
