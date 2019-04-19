@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Fasetto_Word"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             mc:Ignorable="d" >
 
     <Border Padding="15" 
             Background="{StaticResource ForegroundLightBrush}">
@@ -43,6 +42,52 @@
                      Foreground="{StaticResource ForegroundVeryDarkBrush}"
                      FontFamily="{StaticResource LatoRegular}"/>
                 </TextBlock>
+            </Grid>
+
+            <Grid Grid.Row="1"
+                  Width="700"
+                  VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Profile Picture -->
+                <Border CornerRadius="8" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/Samples/cat.jpg" Stretch="UniformToFill"/>
+                    </Border.Background>
+                </Border>
+                
+                <!-- Profile detail -->
+                <Grid Grid.Column="1"
+                      local:PanelChildMarginProperty.Value="15 8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Name" FontFamily="{StaticResource LatoRegular}"/>
+                    <TextBlock Text="UserName" FontFamily="{StaticResource LatoRegular}" Grid.Row="1"/>
+                    <TextBlock Text="Password" FontFamily="{StaticResource LatoRegular}" Grid.Row="2"/>
+                    <TextBlock Text="Email" FontFamily="{StaticResource LatoRegular}" Grid.Row="3"/>
+                    
+                    <!-- Content -->
+                    <TextBlock Text="Tomty" Grid.Column="1"/>
+                    <TextBlock Text="Tomty" Grid.Column="1" Grid.Row="1"/>
+                    <TextBlock Text="*********" Grid.Column="1" Grid.Row="2"/>
+                    <TextBlock Text="Tomty@test.com" Grid.Column="1" Grid.Row="3"/>
+                    
+                </Grid>
             </Grid>
 
             <!-- Main content -->
